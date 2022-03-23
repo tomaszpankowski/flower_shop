@@ -85,10 +85,10 @@ class RegisterForm extends Component{
 
     render(){
         return(        
-            <Container fluid className={"contact-s2 align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
+            <Container fluid className={"contact-s2 align-items-center px-0 py-5 border-top border-secondary d-flex minh-100vh "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={11} md={6} lg={5} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-secondary p-4 rounded bg-light shadow text-secondary opacity-9 fw-bold"
+                        <Form className="text-start w-100 border border-secondary p-4 rounded bg-light  shadow text-secondary opacity-9 fw-bold"
                             autoComplete="off"
                             method="POST">
                             <div className="border-bottom border-secondary mb-4">
