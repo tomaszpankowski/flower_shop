@@ -1,1 +1,70 @@
 @include aoa-bg-series($bg__init,$classes_init);
+
+.about,.bouquets{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+
+nav{
+    z-index: 10;
+}
+
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            background-position: top right!important;
+        }
+    }
+    .blog,.bouquets,.index{
+        &-s1{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            background-position: top right!important;
+        }
+    }
+    .contact{
+        &-s1{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            *{
+                &:hover{
+                    opacity: 0.8;
+                }
+                color: #fff !important;
+            }
+            background-color: #666;
+            border: 1px solid #333;
+            opacity: 0.9;
+        }
+    }
+}
