@@ -1,4 +1,28 @@
 @include aoa-bg-series($bg__init,$classes_init);
+@media all and (orientation:portrait){
+    .about{
+        &-s1{
+            background-position-x: 35%!important;
+        }
+        &-s2{
+            background-position-x: 75%!important;
+        }
+    }
+    .blog{
+        &-s1{
+            background-position-x: 70%!important;
+        }
+    }
+    .bouquets{
+        &-s1{
+            background-position-x: 75%!important;
+        }
+    }
+    .index-s1{
+        background-position-x: 35%!important;
+    }
+}
+
 
 .about,.bouquets{
     &-s3{
@@ -12,7 +36,13 @@
         text-shadow: $text__shadow;
     }
 }
-
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "Courgette";
+    letter-spacing: 1px;
+}
+header{
+    z-index: 10;
+}
 nav{
     z-index: 10;
 }
